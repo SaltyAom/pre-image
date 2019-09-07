@@ -1,0 +1,22 @@
+{
+	"name": "pre-image",
+	"version": "0.1.0",
+	"main": "index.js",
+	"description": "A simple function to preload images in background idle time.",
+	"repository": {
+		"url": "https://github.com/aomkirby123/pre-image",
+		"type": "git"
+	},
+	"license": "MIT",
+	"author": "aomkirby123",
+	"keywords": [
+		"preImage",
+		"preImage js",
+		"preload-image",
+		"preload-image js",
+		"preload image javascript"
+	],
+	"homepage": "https://github.com/aomkirby123/pre-image",
+	"bugs": "https://github.com/aomkirby123/opener-api-module/issues",
+	"readmeFilename": "README.md"
+}
