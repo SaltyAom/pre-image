@@ -1,5 +1,5 @@
 # preImage
-## Preload images in background idle time.
+### Preload images in background idle time.
 A simple function to preload images in background idle time.
   
 ```javascript
@@ -25,20 +25,30 @@ Why even waste that spaces when you can just simply:
 ```javascript
 preImage(
     "/mock1.jpg", 
-    "/mock2.png", 
-    "https://mystiar.com/shino.png"
+    "/mock2.png"
 )
 ```
 And can even be configured:
 ```javascript
 preImage(
     "/mock1.jpg", 
-    "/mock2.png", 
     "https://mystiar.com/shino.png"
 , {
-    delay: 1000
+    delay: 1000,
+    cors: true
 })
 ```
-#### And the package size is just only 0.6kB!
+Or wait until images's request is loaded
+```javascript
+preImage('/mock1.jpg','/mock2.png').then(() => {
+    console.log("All images are loaded!")
+})
+
+// or inside async function
+await preImage('/mock1.jpg','/mock2.png')
+console.log("All images are loaded!")
+```
+
+### And the package size is just only 1kB!
   
 Now you can just preload image without touching HTML. (Imagine you use React.js, Vue.js. You can just preload them directly!)
